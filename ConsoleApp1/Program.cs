@@ -40,6 +40,10 @@ while (salir != 1)
                 MiListaNumerica<decimal> listaDecimal = new MiListaNumerica<decimal>();
                 Operaciones<decimal>.Ejecutar(listaDecimal);
                 break;
+            case "double":
+                MiListaNumerica<decimal> listaDouble = new MiListaNumerica<decimal>();
+                Operaciones<decimal>.Ejecutar(listaDouble);
+                break;
 
             default:
                 Console.WriteLine("Tipo no válido");
