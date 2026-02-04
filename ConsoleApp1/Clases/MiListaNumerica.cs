@@ -54,7 +54,8 @@ namespace ConsoleApp1.Clases
 
             if (Lista.Count < 2)
             {
-                throw new InvalidOperationException("No se puede realizar operaciones si la lista esta vacia o tiene menos de 2 elementos.");
+                Console.WriteLine("No se puede realizar operaciones si la lista está vacía o tiene menos de 2 elementos.");
+                throw new InvalidOperationException("Operación inválida: lista insuficiente.");
             }
             return matematica(Lista[0], Lista[1]);
 
